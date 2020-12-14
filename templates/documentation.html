@@ -1,1 +1,60 @@
-{% extends 'base.html' %} {% block content %} {% endblock %}
+{% extends 'base.html' %} {% block content %}
+<div class="jumbotron border-0 m-5 py-5 px-5 bg-white text-dark">
+  <a
+    class="text-dark"
+    href="{{url_for('read_selection',selection='Coordinates')}}"
+  >
+    <div class="container">
+      <h1>Coordinates</h1>
+      <p>Latitude and Longitude of selected fire.</p>
+    </div>
+  </a>
+
+  <a
+    class="text-dark"
+    href="{{url_for('read_selection',selection='Date Discovered')}}"
+  >
+    <div class="container">
+      <h1>Date Discovered</h1>
+      <p>The approximate time of detection.</p>
+    </div>
+  </a>
+
+  <a
+    class="text-dark"
+    href="{{url_for('read_selection',selection='Probability')}}"
+  >
+    <div class="container">
+      <h1>Probability</h1>
+      <p>Likelihood of accurate detection.</p>
+    </div>
+  </a>
+
+  <a class="text-dark" href="{{url_for('read_selection',selection='Scan')}}">
+    <div class="container">
+      <h1>Scan</h1>
+      <p>How many times the satellite recognized this selection.</p>
+    </div>
+  </a>
+
+  <a
+    class="text-dark"
+    href="{{url_for('read_selection',selection='Bright T31')}}"
+  >
+    <div class="container">
+      <h1>Bright T31</h1>
+      <p>Estimated temperature of selected fire.</p>
+    </div>
+  </a>
+
+  <a
+    class="text-dark"
+    href="{{url_for('read_selection',selection='Satellite')}}"
+  >
+    <div class="container">
+      <h1>Satellite</h1>
+      <p>Satellite that made the discovery.</p>
+    </div>
+  </a>
+</div>
+{% endblock %}

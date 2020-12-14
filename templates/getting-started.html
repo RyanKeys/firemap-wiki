@@ -1,1 +1,76 @@
-{% extends 'base.html' %} {% block content %} {% endblock %}
+{% extends 'base.html' %} {% block content %}
+<div class="jumbotron border-0 m-5 py-4 px-5 bg-white text-dark">
+  <h1 class="display-4 text-left">Our Stack</h1>
+  <div class="d-flex justfy-content-between pl-5">
+    <a href="https://nodejs.org/">
+      <div class="card border-0 text-left text-dark bg-light mx-3">
+        <img
+          class="d-block mx-auto w-100"
+          src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Node.js</h4>
+          <p class="card-text">Handles API requests via Express.</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://console.cloud.google.com">
+      <div class="card border-0 text-left text-dark bg-light mx-3">
+        <img
+          class="d-block mx-auto w-50"
+          src="http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Google Maps API</h4>
+          <p class="card-text">Handles the map functionality.</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://reactjs.org">
+      <div class="card border-0 text-left text-dark bg-light mx-3">
+        <img
+          class="d-block mx-auto w-50"
+          src="https://pluspng.com/img-png/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png"
+        />
+        <div class="card-body">
+          <h4 class="card-title">React.js</h4>
+          <p class="card-text">Main library for rendering client side.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="jumbotron border-0 m-5 py-4 px-5 bg-white text-dark">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
